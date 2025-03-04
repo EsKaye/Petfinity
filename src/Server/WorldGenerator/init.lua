@@ -25,13 +25,21 @@ local BIOME_BLEND_DISTANCE = 20
 -- Dependencies
 print("📂 Loading WorldGenerator dependencies...")
 local success, BiomeHandler = pcall(function()
-    return require(script.Parent.Parent.BiomeHandler)
+    local path = script.Parent.Parent.BiomeHandler
+    print("  Loading BiomeHandler from:", path:GetFullName())
+    return require(path)
 end)
 if not success then
     warn("⚠️ Failed to load BiomeHandler:", BiomeHandler)
     return nil
 end
-print("✅ BiomeHandler loaded!")
+print("✅ BiomeHandler loaded successfully!")
+
+-- Verify BiomeHandler is properly initialized
+if not BiomeHandler or not BiomeHandler.getBiomeData then
+    warn("⚠️ BiomeHandler not properly initialized")
+    return nil
+end
 
 -- Private functions
 local function generateNoise(x, z, scale, octaves, persistence, lacunarity)

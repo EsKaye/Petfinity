@@ -16,13 +16,21 @@ local Terrain = Workspace.Terrain
 -- Dependencies
 print("📂 Loading AssetPlacer dependencies...")
 local success, BiomeHandler = pcall(function()
-    return require(script.Parent.Parent.BiomeHandler)
+    local path = script.Parent.Parent.BiomeHandler
+    print("  Loading BiomeHandler from:", path:GetFullName())
+    return require(path)
 end)
 if not success then
     warn("⚠️ Failed to load BiomeHandler:", BiomeHandler)
     return nil
 end
-print("✅ BiomeHandler loaded!")
+print("✅ BiomeHandler loaded successfully!")
+
+-- Verify BiomeHandler is properly initialized
+if not BiomeHandler or not BiomeHandler.getBiomeData then
+    warn("⚠️ BiomeHandler not properly initialized")
+    return nil
+end
 
 -- Constants
 local MIN_SPAWN_DISTANCE = 10
