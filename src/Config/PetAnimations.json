@@ -1,0 +1,106 @@
+{
+    "idle": {
+        "id": "rbxassetid://12345678",
+        "looped": true,
+        "speedScale": 1.0,
+        "priority": "core",
+        "blendTime": 0.3
+    },
+    "walk": {
+        "id": "rbxassetid://12345679",
+        "looped": true,
+        "speedScale": 1.0,
+        "priority": "core",
+        "blendTime": 0.2
+    },
+    "run": {
+        "id": "rbxassetid://12345680",
+        "looped": true,
+        "speedScale": 1.2,
+        "priority": "core",
+        "blendTime": 0.15
+    },
+    "jump": {
+        "id": "rbxassetid://12345681",
+        "looped": false,
+        "speedScale": 1.0,
+        "priority": "action",
+        "blendTime": 0.1
+    },
+    "happy": {
+        "id": "rbxassetid://12345682",
+        "looped": false,
+        "speedScale": 1.0,
+        "priority": "action",
+        "blendTime": 0.2,
+        "effects": {
+            "particles": "HEARTS",
+            "sound": "HAPPY_CHIRP"
+        }
+    },
+    "sad": {
+        "id": "rbxassetid://12345683",
+        "looped": false,
+        "speedScale": 0.8,
+        "priority": "action",
+        "blendTime": 0.3,
+        "effects": {
+            "particles": "TEARS",
+            "sound": "SAD_WHIMPER"
+        }
+    },
+    "eat": {
+        "id": "rbxassetid://12345684",
+        "looped": false,
+        "speedScale": 1.0,
+        "priority": "action",
+        "blendTime": 0.2,
+        "effects": {
+            "particles": "FOOD_BITS",
+            "sound": "EATING"
+        }
+    },
+    "play": {
+        "id": "rbxassetid://12345685",
+        "looped": true,
+        "speedScale": 1.2,
+        "priority": "action",
+        "blendTime": 0.2,
+        "effects": {
+            "particles": "STARS",
+            "sound": "PLAYFUL_BARK"
+        }
+    },
+    "rare_variants": {
+        "LEGENDARY": {
+            "idle": {
+                "id": "rbxassetid://12345686",
+                "effects": {
+                    "aura": "GOLDEN_SPARKLE",
+                    "trail": "STARDUST"
+                }
+            },
+            "walk": {
+                "id": "rbxassetid://12345687",
+                "effects": {
+                    "trail": "STARDUST"
+                }
+            }
+        },
+        "MYTHICAL": {
+            "idle": {
+                "id": "rbxassetid://12345688",
+                "effects": {
+                    "aura": "COSMIC_SWIRL",
+                    "trail": "GALAXY"
+                }
+            },
+            "walk": {
+                "id": "rbxassetid://12345689",
+                "effects": {
+                    "trail": "GALAXY"
+                }
+            }
+        }
+    }
+} 

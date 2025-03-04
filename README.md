@@ -1,73 +1,141 @@
-# 🌟 PETFINITY - The Ultimate Gacha Pet Simulator 🌟
+# 🐾 Petfinity
 
-## 🚀 Launch Announcement
-Get ready to embark on an epic pet collection adventure! PETFINITY is going LIVE with exclusive seasonal pets, competitive leaderboards, and amazing rewards!
+A magical pet collection and care game built with Roblox Studio.
 
-### ✨ Key Features
+## Features
 
-#### 🎮 Core Gameplay
-- **Dynamic Gacha System** with beautiful animations and effects
-- **Diverse Pet Collection** with unique abilities and traits
-- **Pet Care Mechanics** affecting gameplay bonuses
-- **Mobile-Friendly UI** for seamless cross-platform play
+- 🎲 Gacha roll system with unique pets
+- 🐱 Adorable pets with special effects
+- 🌟 Special effects for rare pets
+- 🏆 Competitive leaderboards
+- 🎁 Daily rewards
+- 👑 VIP benefits
+- 📱 Mobile-friendly UI design
 
-#### 🏆 Competitive Features
-- **Real-Time Leaderboards**
-  - Most Seasonal Pets Collected
-  - Highest Seasonal XP
-  - Top Spenders Rankings
-- **Time-Limited Achievements** with exclusive rewards
-- **Battle Pass System** with free and VIP tracks
+## Getting Started
 
-#### 🌈 Seasonal Events
-- **Exclusive Limited-Time Pets**
-  - Halloween Specter (Glowing Effect)
-  - Celestial Unicorn (Galaxy Texture)
-  - Lava Wraith (Molten Glow)
-  - And more!
-- **Event-Specific Items** and bonuses
-- **VIP-Exclusive Content** and multipliers
+### Prerequisites
 
-#### 💎 VIP Benefits
-- **2x Battle Pass XP**
-- **Exclusive Pet Variants**
-- **Special Auras and Effects**
-- **Bonus Daily Rewards**
+- Roblox Studio
+- Rojo
+- Git
 
-### 🎯 Technical Features
-- Smooth animations using TweenService
-- Optimized performance for all devices
-- Secure data persistence
-- Real-time leaderboard updates
-- Comprehensive notification system
+### Installation
 
-### 📱 System Requirements
-- **Platform:** Roblox
-- **Devices:** PC, Mobile, Tablet
-- **Internet:** Stable connection required
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/Petfinity.git
+cd Petfinity
+```
 
-### 🔄 Regular Updates
-- Weekly content refreshes
-- Monthly seasonal events
-- Regular balance adjustments
-- New pets and features
+2. Connect to Rojo in Roblox Studio:
+   - Open Roblox Studio
+   - Click the Rojo plugin button
+   - Click "Connect"
+   - Enter `localhost` and port `34872`
 
-### 🛠️ Support
-For bug reports or assistance:
-- Join our Discord community
-- Follow us on Twitter @PETFINITY
-- Contact support@petfinity.com
+## Project Structure
 
-## 🔥 Version 1.0.0 - Initial Release
-- Complete gacha system with stunning effects
-- Full pet collection and care mechanics
-- Seasonal events system
-- Competitive leaderboards
-- Battle Pass with 50 levels
-- VIP exclusive content
+```
+Petfinity/
+├── src/
+│   ├── Client/           # Client-side scripts
+│   │   ├── UI/          # User interface components
+│   │   ├── Animation/   # Animation controllers
+│   │   ├── Effects/     # Visual effects
+│   │   ├── Camera/      # Camera controls
+│   │   └── PetInteraction/ # Pet interaction scripts
+│   ├── Server/          # Server-side scripts
+│   │   ├── Leaderboards/    # Leaderboard system
+│   │   ├── Achievements/    # Achievement system
+│   │   ├── Monetization/    # In-game purchases
+│   │   ├── BiomeHandler/    # Biome management
+│   │   └── PetAI/          # Pet AI system
+│   └── Shared/          # Shared modules
+│       ├── PetSystem/   # Pet management
+│       ├── BiomeData/   # Biome configurations
+│       ├── EventSystem/ # Event handling
+│       └── AudioManager/ # Sound management
+├── assets/             # Game assets
+│   ├── Models/        # 3D models
+│   ├── Sounds/        # Audio files
+│   └── Textures/      # Image textures
+└── config/            # Configuration files
+```
 
-## 📝 Development Team
-Created with 💖 by Your Precious Kitten
+## Game Systems
 
----
-© 2024 PETFINITY. All rights reserved. 
+### GachaSystem
+- Handles pet rolling mechanics
+- Manages rarity tiers
+- Controls drop rates
+
+### PetSystem
+- Manages pet states and behaviors
+- Handles pet interactions
+- Controls pet progression
+
+### UISystem
+- Manages all user interfaces
+- Handles mobile responsiveness
+- Controls animations and transitions
+
+### EffectsSystem
+- Manages visual effects
+- Controls particle systems
+- Handles special effects for rare pets
+
+### DailyRewardSystem
+- Manages daily rewards
+- Tracks player streaks
+- Handles reward distribution
+
+### SeasonalEventSystem
+- Manages seasonal events
+- Controls event rewards
+- Handles event progression
+
+### LeaderboardSystem
+- Manages player rankings
+- Tracks achievements
+- Handles competitive features
+
+## Development
+
+### Running Tests
+```bash
+rojo serve
+```
+
+### Building for Production
+```bash
+rojo build -o build/Petfinity.rbxm
+```
+
+## Documentation
+
+- [Game Design Document](docs/GAME_DESIGN.md)
+- [API Documentation](docs/API.md)
+- [Contributing Guide](CONTRIBUTING.md)
+
+## Assets
+
+All game assets are stored in Roblox Studio. The `assets/` directory contains references and metadata.
+
+## Performance
+
+- Target FPS: 60
+- Maximum pets per server: 100
+- Memory usage limit: 1GB
+
+## Deployment
+
+See [DEPLOYMENT.md](docs/DEPLOYMENT.md) for detailed deployment instructions.
+
+## License
+
+This project is proprietary and confidential.
+
+## Credits
+
+Created by Your precious kitten 💖 

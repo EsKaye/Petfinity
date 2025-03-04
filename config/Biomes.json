@@ -1,0 +1,328 @@
+{
+    "MYSTIC_MEADOWS": {
+        "name": "Mystic Meadows",
+        "description": "A peaceful starter area with lush fields and gentle streams",
+        "terrain": {
+            "baseColor": [124, 252, 0],
+            "waterColor": [0, 191, 255],
+            "elevation": {
+                "min": 0,
+                "max": 50
+            },
+            "features": ["streams", "hills", "trees"]
+        },
+        "weather": {
+            "default": "sunny",
+            "possibilities": ["sunny", "light_rain", "cloudy"],
+            "transitionTime": 300
+        },
+        "lighting": {
+            "ambient": [0.8, 0.9, 0.8],
+            "brightness": 2.5,
+            "exposure": 1.2
+        },
+        "spawns": {
+            "common": ["Meadow_Bunny", "Forest_Deer", "Garden_Butterfly"],
+            "rare": ["Mystic_Fox", "Spirit_Deer"],
+            "legendary": ["Ancient_Treant"]
+        },
+        "music": {
+            "day": "rbxassetid://peaceful_meadow_day",
+            "night": "rbxassetid://peaceful_meadow_night"
+        }
+    },
+    "EMBER_CANYONS": {
+        "name": "Ember Canyons",
+        "description": "A volcanic region with flowing lava and intense heat",
+        "terrain": {
+            "baseColor": [139, 69, 19],
+            "lavaColor": [255, 69, 0],
+            "elevation": {
+                "min": 30,
+                "max": 120
+            },
+            "features": ["lava_rivers", "volcanic_vents", "obsidian_peaks"]
+        },
+        "weather": {
+            "default": "heat_wave",
+            "possibilities": ["heat_wave", "ash_fall", "eruption"],
+            "transitionTime": 400
+        },
+        "lighting": {
+            "ambient": [1.0, 0.6, 0.4],
+            "brightness": 3.0,
+            "exposure": 1.4
+        },
+        "spawns": {
+            "common": ["Ember_Lizard", "Lava_Slug", "Ash_Bat"],
+            "rare": ["Magma_Serpent", "Flame_Raptor"],
+            "legendary": ["Phoenix"]
+        },
+        "music": {
+            "day": "rbxassetid://volcanic_theme_day",
+            "night": "rbxassetid://volcanic_theme_night"
+        }
+    },
+    "FROSTFALL_PEAKS": {
+        "name": "Frostfall Peaks",
+        "description": "Snow-covered mountains with icy caves and frozen lakes",
+        "terrain": {
+            "baseColor": [255, 255, 255],
+            "iceColor": [200, 230, 255],
+            "elevation": {
+                "min": 80,
+                "max": 200
+            },
+            "features": ["ice_caves", "frozen_lakes", "snow_drifts"]
+        },
+        "weather": {
+            "default": "light_snow",
+            "possibilities": ["light_snow", "blizzard", "clear_frost"],
+            "transitionTime": 350
+        },
+        "lighting": {
+            "ambient": [0.7, 0.8, 1.0],
+            "brightness": 2.8,
+            "exposure": 1.1
+        },
+        "spawns": {
+            "common": ["Snow_Hare", "Frost_Fox", "Ice_Penguin"],
+            "rare": ["Frost_Wolf", "Ice_Bear"],
+            "legendary": ["Glacier_Wyvern"]
+        },
+        "music": {
+            "day": "rbxassetid://winter_theme_day",
+            "night": "rbxassetid://winter_theme_night"
+        }
+    },
+    "CELESTIAL_SANCTUARY": {
+        "name": "Celestial Sanctuary",
+        "description": "A mystical realm of floating islands under an eternal starry sky",
+        "terrain": {
+            "baseColor": [147, 112, 219],
+            "starColor": [255, 255, 255],
+            "elevation": {
+                "min": 150,
+                "max": 300
+            },
+            "features": ["floating_islands", "crystal_formations", "star_fountains"]
+        },
+        "weather": {
+            "default": "starfall",
+            "possibilities": ["starfall", "aurora", "meteor_shower"],
+            "transitionTime": 450
+        },
+        "lighting": {
+            "ambient": [0.6, 0.6, 0.9],
+            "brightness": 1.8,
+            "exposure": 1.6
+        },
+        "spawns": {
+            "common": ["Star_Sprite", "Nebula_Wisp", "Astral_Bird"],
+            "rare": ["Nebula_Fox", "Starborn_Griffin"],
+            "legendary": ["Celestial_Unicorn"]
+        },
+        "music": {
+            "day": "rbxassetid://celestial_theme_day",
+            "night": "rbxassetid://celestial_theme_night"
+        }
+    },
+    "Forest": {
+        "centerX": 0,
+        "centerZ": 0,
+        "radius": 200,
+        "baseHeight": 10,
+        "heightVariation": 20,
+        "terrainTexture": "Grass",
+        "terrainMaterial": "Grass",
+        "weather": {
+            "type": "Clear",
+            "intensity": 1,
+            "frequency": 0.5
+        },
+        "lighting": {
+            "ambient": [200, 200, 200],
+            "outdoorAmbient": [200, 200, 200],
+            "brightness": 1,
+            "globalShadows": true
+        },
+        "assets": {
+            "trees": ["OakTree", "PineTree", "MapleTree"],
+            "treeDensity": {
+                "min": 5,
+                "max": 15
+            },
+            "rocks": ["Rock1", "Rock2", "Rock3"],
+            "rockDensity": {
+                "min": 3,
+                "max": 8
+            },
+            "structures": [
+                {
+                    "type": "WoodenCabin",
+                    "density": {
+                        "min": 1,
+                        "max": 3
+                    }
+                }
+            ],
+            "decorations": ["Flower1", "Flower2", "Bush1", "Bush2"],
+            "decorationDensity": {
+                "min": 10,
+                "max": 20
+            }
+        },
+        "spawnPoints": {
+            "gacha": [
+                {
+                    "type": "GachaMachine",
+                    "density": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ],
+            "events": [
+                {
+                    "type": "EventArea",
+                    "density": {
+                        "min": 1,
+                        "max": 1
+                    }
+                }
+            ]
+        }
+    },
+    "Desert": {
+        "centerX": 300,
+        "centerZ": 0,
+        "radius": 200,
+        "baseHeight": 15,
+        "heightVariation": 30,
+        "terrainTexture": "Sand",
+        "terrainMaterial": "Sand",
+        "weather": {
+            "type": "Clear",
+            "intensity": 1.2,
+            "frequency": 0.3
+        },
+        "lighting": {
+            "ambient": [255, 200, 150],
+            "outdoorAmbient": [255, 200, 150],
+            "brightness": 1.2,
+            "globalShadows": true
+        },
+        "assets": {
+            "trees": ["Cactus1", "Cactus2", "PalmTree"],
+            "treeDensity": {
+                "min": 3,
+                "max": 8
+            },
+            "rocks": ["DesertRock1", "DesertRock2"],
+            "rockDensity": {
+                "min": 5,
+                "max": 12
+            },
+            "structures": [
+                {
+                    "type": "DesertTemple",
+                    "density": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ],
+            "decorations": ["DesertPlant1", "DesertPlant2"],
+            "decorationDensity": {
+                "min": 8,
+                "max": 15
+            }
+        },
+        "spawnPoints": {
+            "gacha": [
+                {
+                    "type": "GachaMachine",
+                    "density": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ],
+            "events": [
+                {
+                    "type": "EventArea",
+                    "density": {
+                        "min": 1,
+                        "max": 1
+                    }
+                }
+            ]
+        }
+    },
+    "Ocean": {
+        "centerX": 0,
+        "centerZ": 300,
+        "radius": 200,
+        "baseHeight": -20,
+        "heightVariation": 10,
+        "terrainTexture": "Water",
+        "terrainMaterial": "Water",
+        "weather": {
+            "type": "Clear",
+            "intensity": 1,
+            "frequency": 0.4
+        },
+        "lighting": {
+            "ambient": [150, 200, 255],
+            "outdoorAmbient": [150, 200, 255],
+            "brightness": 1.1,
+            "globalShadows": true
+        },
+        "assets": {
+            "trees": ["Coral1", "Coral2", "Seaweed1"],
+            "treeDensity": {
+                "min": 8,
+                "max": 20
+            },
+            "rocks": ["UnderwaterRock1", "UnderwaterRock2"],
+            "rockDensity": {
+                "min": 10,
+                "max": 25
+            },
+            "structures": [
+                {
+                    "type": "UnderwaterRuins",
+                    "density": {
+                        "min": 1,
+                        "max": 3
+                    }
+                }
+            ],
+            "decorations": ["Seaweed2", "Seaweed3", "Shell1", "Shell2"],
+            "decorationDensity": {
+                "min": 15,
+                "max": 30
+            }
+        },
+        "spawnPoints": {
+            "gacha": [
+                {
+                    "type": "UnderwaterGacha",
+                    "density": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ],
+            "events": [
+                {
+                    "type": "UnderwaterEvent",
+                    "density": {
+                        "min": 1,
+                        "max": 1
+                    }
+                }
+            ]
+        }
+    }
+} 

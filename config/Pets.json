@@ -1,0 +1,168 @@
+{
+    "COMMON": {
+        "MEADOW_BUNNY": {
+            "name": "Meadow Bunny",
+            "description": "A gentle bunny that loves hopping through flowers",
+            "stats": {
+                "speed": 12,
+                "jumpPower": 35,
+                "swimSpeed": 4
+            },
+            "animations": {
+                "idle": {
+                    "frames": 4,
+                    "duration": 1.2,
+                    "looped": true
+                },
+                "walk": {
+                    "frames": 6,
+                    "duration": 0.8,
+                    "looped": true
+                },
+                "jump": {
+                    "frames": 3,
+                    "duration": 0.4,
+                    "looped": false
+                },
+                "happy": {
+                    "frames": 5,
+                    "duration": 0.6,
+                    "looped": true
+                }
+            },
+            "sounds": {
+                "happy": "rbxassetid://bunny_happy",
+                "eat": "rbxassetid://bunny_eat",
+                "play": "rbxassetid://bunny_play"
+            },
+            "personality": {
+                "playfulness": 0.8,
+                "shyness": 0.3,
+                "energy": 0.7
+            }
+        }
+    },
+    "RARE": {
+        "MYSTIC_FOX": {
+            "name": "Mystic Fox",
+            "description": "A mystical fox with glowing markings",
+            "stats": {
+                "speed": 16,
+                "jumpPower": 40,
+                "swimSpeed": 8
+            },
+            "animations": {
+                "idle": {
+                    "frames": 4,
+                    "duration": 1.0,
+                    "looped": true
+                },
+                "walk": {
+                    "frames": 6,
+                    "duration": 0.6,
+                    "looped": true
+                },
+                "jump": {
+                    "frames": 4,
+                    "duration": 0.5,
+                    "looped": false
+                },
+                "happy": {
+                    "frames": 6,
+                    "duration": 0.7,
+                    "looped": true
+                }
+            },
+            "sounds": {
+                "happy": "rbxassetid://fox_happy",
+                "eat": "rbxassetid://fox_eat",
+                "play": "rbxassetid://fox_play"
+            },
+            "personality": {
+                "playfulness": 0.9,
+                "shyness": 0.2,
+                "energy": 0.8
+            },
+            "effects": {
+                "trail": {
+                    "enabled": true,
+                    "color": [147, 112, 219],
+                    "transparency": 0.4
+                },
+                "particles": {
+                    "enabled": true,
+                    "color": [180, 150, 255],
+                    "rate": 10
+                }
+            }
+        }
+    },
+    "LEGENDARY": {
+        "CELESTIAL_UNICORN": {
+            "name": "Celestial Unicorn",
+            "description": "A majestic unicorn born from stardust",
+            "stats": {
+                "speed": 20,
+                "jumpPower": 50,
+                "swimSpeed": 12,
+                "flightEnabled": true,
+                "flightSpeed": 25
+            },
+            "animations": {
+                "idle": {
+                    "frames": 6,
+                    "duration": 1.5,
+                    "looped": true
+                },
+                "walk": {
+                    "frames": 8,
+                    "duration": 0.8,
+                    "looped": true
+                },
+                "jump": {
+                    "frames": 5,
+                    "duration": 0.6,
+                    "looped": false
+                },
+                "happy": {
+                    "frames": 7,
+                    "duration": 0.9,
+                    "looped": true
+                },
+                "fly": {
+                    "frames": 6,
+                    "duration": 1.0,
+                    "looped": true
+                }
+            },
+            "sounds": {
+                "happy": "rbxassetid://unicorn_happy",
+                "eat": "rbxassetid://unicorn_eat",
+                "play": "rbxassetid://unicorn_play",
+                "fly": "rbxassetid://unicorn_fly"
+            },
+            "personality": {
+                "playfulness": 0.7,
+                "shyness": 0.1,
+                "energy": 1.0
+            },
+            "effects": {
+                "trail": {
+                    "enabled": true,
+                    "color": [255, 200, 255],
+                    "transparency": 0.2
+                },
+                "particles": {
+                    "enabled": true,
+                    "color": [255, 220, 255],
+                    "rate": 20
+                },
+                "glow": {
+                    "enabled": true,
+                    "color": [255, 230, 255],
+                    "intensity": 0.8
+                }
+            }
+        }
+    }
+} 

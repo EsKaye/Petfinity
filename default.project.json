@@ -1,0 +1,42 @@
+{
+    "name": "Petfinity",
+    "tree": {
+        "$className": "DataModel",
+        "ReplicatedStorage": {
+            "$className": "ReplicatedStorage",
+            "Shared": {
+                "$path": "src/Shared"
+            },
+            "Config": {
+                "$path": "config"
+            },
+            "Assets": {
+                "$path": "src/ReplicatedStorage/Assets"
+            }
+        },
+        "ServerScriptService": {
+            "$className": "ServerScriptService",
+            "Server": {
+                "$path": "src/Server"
+            },
+            "TestButtons": {
+                "$path": "src/Server/TestButtons.server.lua"
+            }
+        },
+        "StarterPlayer": {
+            "$className": "StarterPlayer",
+            "StarterPlayerScripts": {
+                "$className": "StarterPlayerScripts",
+                "Client": {
+                    "$path": "src/Client"
+                }
+            }
+        },
+        "Workspace": {
+            "$className": "Workspace",
+            "Terrain": {
+                "$className": "Terrain"
+            }
+        }
+    }
+} 

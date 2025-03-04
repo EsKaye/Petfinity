@@ -7,6 +7,9 @@
 @scratchpad.md
 *.cursor-cache
 *.cursor-backup
+.cursor.json
+.cursorrules
+RULESFORAI.md
 
 # Roblox-specific
 *.rbxl
@@ -154,4 +157,71 @@ yarn-error.log*
 *.exe
 *.dll
 *.so
-*.dylib 
+*.dylib
+
+# Rojo
+/build/
+/*.rbxl
+/*.rbxlx
+/*.rbxm
+/*.rbxmx
+
+# Roblox Studio
+/*.rbxl.lock
+/*.rbxlx.lock
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Logs
+*.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+.env
+.env.local
+
+# Dependencies
+/node_modules/
+/packages/
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+
+# Debug Files
+*.debug
+*.pdb
+
+# Roblox Studio Generated Files
+*.rbxlx.lock
+*.rbxl.lock
+*.rbxm.lock
+*.rbxmx.lock
+
+# Build Output
+/build/
+/dist/
+
+# Local Development
+*.local
+local_settings.json
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 
