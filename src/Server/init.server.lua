@@ -10,10 +10,10 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerScriptService = game:GetService("ServerScriptService")
 
 -- Load required modules
-local AIController = require(ServerScriptService.Server.AIController)
-local WorldGenerator = require(ServerScriptService.Server.WorldGenerator)
-local BiomeHandler = require(ServerScriptService.Server.BiomeHandler)
-local AssetPlacer = require(ServerScriptService.Server.AssetPlacer.init)
+local AIController = require(script.AIController)
+local WorldGenerator = require(script.WorldGenerator)
+local BiomeHandler = require(script.BiomeHandler)
+local AssetPlacer = require(script.AssetPlacer.init)
 
 -- Initialize AI system
 local function initializeAISystem()
