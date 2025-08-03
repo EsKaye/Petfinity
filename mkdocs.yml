@@ -1,0 +1,8 @@
+site_name: Petfinity
+nav:
+  - Home: index.md
+  - Divine Law: divine-law.md
+theme:
+  name: readthedocs
+extra_css:
+  - styles/extra.css

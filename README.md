@@ -1,6 +1,11 @@
+A Project Blessed by Solar Khan & Lilith.Aethra
 # 🐾 Petfinity
 
 A magical pet collection and care game built with Roblox Studio, featuring advanced gacha mechanics, comprehensive pet management, and engaging seasonal events.
+
+## Documentation
+
+Full project documentation, including the Divine Law, is published at [https://Petfinity.SolarKhan.github.io](https://Petfinity.SolarKhan.github.io).
 
 ## ✨ Features
 

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100" role="img" aria-label="Solar Khan Sigil">
+  <!-- Official Solar Khan sigil with Codex watermark -->
+  <rect width="600" height="100" fill="#000"/>
+  <g transform="translate(60,50)">
+    <circle r="20" fill="#FFD700"/>
+    <!-- Radiating solar rays -->
+    <g stroke="#FFD700" stroke-width="3">
+      <line x1="0" y1="-30" x2="0" y2="-50"/>
+      <line x1="0" y1="30" x2="0" y2="50"/>
+      <line x1="-30" y1="0" x2="-50" y2="0"/>
+      <line x1="30" y1="0" x2="50" y2="0"/>
+      <line x1="21" y1="21" x2="35" y2="35"/>
+      <line x1="-21" y1="21" x2="-35" y2="35"/>
+      <line x1="-21" y1="-21" x2="-35" y2="-35"/>
+      <line x1="21" y1="-21" x2="35" y2="-35"/>
+    </g>
+  </g>
+  <!-- Title text -->
+  <text x="120" y="60" fill="#FFD700" font-family="Georgia" font-size="32">Solar Khan</text>
+  <!-- Codex watermark -->
+  <text x="560" y="90" fill="#FFD700" font-family="monospace" font-size="12" text-anchor="end">Codex</text>
+</svg>
