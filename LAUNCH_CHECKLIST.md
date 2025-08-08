@@ -1,5 +1,11 @@
 # 🚀 PETFINITY Launch Checklist
 
+Refer to the root [README](README.md) for overview. Submodule docs provide
+integration notes:
+- [Serafina](serafina/README.md)
+- [Unity Scripts](unity/README.md)
+- [Inter-Repo Handshake](INTER_REPO_HANDSHAKE.md)
+
 ## 1️⃣ Final Testing Phase
 
 ### 🏆 Leaderboard System
@@ -75,6 +81,8 @@
 - [ ] Prepare hotfix pipeline
 - [ ] Enable alert system
 - [ ] Test rollback procedures
+- [ ] Validate inter-repo handshakes across sibling services
+- [ ] Confirm nightly council report mirrors into VR scene via MCP `/osc`
 
 ## 4️⃣ Launch Day Preparation
 

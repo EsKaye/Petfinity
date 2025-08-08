@@ -1,0 +1,20 @@
+{
+  "name": "serafina",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/router.js",
+    "test": "echo 'No tests'"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/node-cron": "^3.0.8"
+  }
+}
