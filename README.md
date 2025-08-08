@@ -45,6 +45,7 @@ A magical pet collection and care game built with Roblox Studio, featuring advan
 - **SeasonalEventSystem**: Limited-time events and exclusive content
 - **EffectsSystem**: Visual effects and particle systems
 - **NotificationSystem**: Push notifications and alerts
+- **Bots & VR Integration**: Discord-driven council reports mirrored in VR via MCP `/osc` and Unity guardians
 
 ## 🚀 Getting Started
 
@@ -109,9 +110,16 @@ Petfinity/
 │   ├── Testing/         # Test scripts
 │   └── Deployment/      # Deployment scripts
 ├── config/             # Configuration files
-├── docs/              # Documentation
+├── serafina/          # Discord bot for council reports
+├── unity/             # VRChat guardian scripts
 └── assets/            # Game assets (references)
 ```
+
+### Additional Modules
+
+- [Serafina](serafina/README.md): orchestrates cross-realm messaging and nightly reports
+- [Unity Scripts](unity/README.md): Lilybear ops bus and guardian prefabs
+- [Inter-Repo Handshake](INTER_REPO_HANDSHAKE.md): protocol for sibling repo discovery
 
 ## 🎮 Game Systems
 
@@ -189,6 +197,7 @@ Petfinity/
 - [Contributing Guide](CONTRIBUTING.md)
 - [Deployment Guide](docs/DEPLOYMENT.md)
 - [Changelog](CHANGELOG.md)
+- [Launch Checklist](LAUNCH_CHECKLIST.md)
 
 ## 🧪 Testing
 
