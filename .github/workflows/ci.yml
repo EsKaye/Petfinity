@@ -1,0 +1,23 @@
+name: CI
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+permissions:
+  contents: read
+jobs:
+  lua:
+    if: ${{ hashFiles('**/*.lua') != '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Lua 
+        run: |
+          sudo apt-get update && sudo apt-get install -y lua5.4 luarocks
+          sudo luarocks install luacheck
+          sudo luarocks install busted || true
+      - name: Lint
+        run: luacheck . || true
+      - name: Test (busted)
+        run: |
+          if compgen -G "spec/**/*_spec.lua" > /dev/null; then busted -q; else echo "No Lua tests"; fi
